@@ -319,7 +319,7 @@ export default function TbCitas({ texto, opcion }: any) {
         setRows([])
         await sleep(50)
         setRows(aux)
-        fetch('http://localhost:3000/api/appointment/' + id, {
+        fetch('https://backend78.herokuapp.com/api/appointment/' + id, {
          method: 'DELETE',
         })
         .then(res => {
