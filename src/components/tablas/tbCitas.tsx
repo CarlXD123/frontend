@@ -360,7 +360,7 @@ export default function TbCitas({ texto, opcion }: any) {
   let dateNow = moment().format('YYYY-MM-DD');
   React.useEffect(() => {
     if (texto == "") {
-      getAppointmentsApi(0, 1000, "E", "").then((ag: any) => {
+      getAppointmentsApi(0, 1000, "", "E").then((ag: any) => {
         let mapeado: any = []
         ag.data.forEach((d: any) => {
           mapeado.push({
