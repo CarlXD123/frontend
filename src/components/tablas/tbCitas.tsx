@@ -361,7 +361,7 @@ export default function TbCitas({ texto, opcion }: any) {
   React.useEffect(() => {
     if (texto == "") {
       getAppointmentsApi(0, 1000, "", "E").then((ag: any) => {
-        let mapeado: any = []
+        let mapeado: any = [];
         ag.data.forEach((d: any) => {
           mapeado.push({
             id: d.id,
@@ -388,7 +388,7 @@ export default function TbCitas({ texto, opcion }: any) {
       });
     } else {
       getFilterAppointmentsApi(opcion, texto, "").then((ag: any) => {
-        let mapeado: any = []
+        let mapeado: any = [];
         ag.data.forEach((d: any) => {
           mapeado.push({
             id: d.id,
