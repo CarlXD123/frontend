@@ -3,7 +3,7 @@ import { apiFetch } from "./apiFetch";
 const PORT_BACKEND = process.env.REACT_APP_PORT_BACKEND || "52241";
 const URL_BACKEND = process.env.REACT_APP_API_URL_BACKEND || "https://backend78.herokuapp.com/";
 
-export const API_URL_BACKEND = `${URL_BACKEND}/api/`;
+export const API_URL_BACKEND = `${URL_BACKEND}:${PORT_BACKEND}/api/`;
 
 export const getPassword = (email: string) =>
   apiFetch(`user/forgot/password`, { method: "POST", body: email });
