@@ -1,6 +1,6 @@
 import { apiFetch } from "./apiFetch";
 
-const PORT_BACKEND = process.env.REACT_APP_PORT_BACKEND || "3000";
+const PORT_BACKEND = process.env.REACT_APP_PORT_BACKEND || "52241";
 const URL_BACKEND = process.env.REACT_APP_API_URL_BACKEND || "https://backend78.herokuapp.com/";
 
 export const API_URL_BACKEND = `${URL_BACKEND}:${PORT_BACKEND}/api/`;
